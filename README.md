@@ -46,7 +46,7 @@ let number = 2
 
 // your code here
 ```
-let isEven = number%2
+let isEven = number % 2
 
 if isEven == 0 {
     print("even")
@@ -104,22 +104,25 @@ var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
 // your code here
-```
-var baconExpires = 8
-var eggsExpires = 22
 
-if (baconAge < baconExpires) && (eggsAge < eggsExpires) {
-    print("you can cook bacon and eggs")
+var baconExpires = 7
+var eggsExpires = 21
+
+if (baconAge <= baconExpires) && (eggsAge <= eggsExpires) {
+print("you can cook bacon and eggs")
 }
-else if (baconAge >= baconExpires) && (eggsAge < eggsExpires)  {
-    print("throw out bacon")
+else if (baconAge >= baconExpires) && (eggsAge <= eggsExpires)  {
+print("throw out bacon")
 }
-else if (baconAge < baconExpires) && (eggsAge >= eggsExpires)  {
-    print("throw out eggs")
+else if (baconAge <= baconExpires) && (eggsAge >= eggsExpires)  {
+print("throw out eggs")
 }
 else {
-    print("throw out eggs and bacon")
+print("throw out eggs and bacon")
 }
+
+```
+
 
 ***
 ## Question 6
@@ -131,7 +134,22 @@ The above rule is valid except that every 100 years special rules apply. Years t
 let year = 2014
 
 // your code here
+var year = 2012
+
+if year % 400 == 0 {
+print("Leap year!")
+} else if year % 100 == 0{
+print("Not a leap year!")
+}else if year % 4 == 0 {
+print("Leap year!")
+}else {
+print("Not a leap year!")
+}
 ```
+Rules of the leap year : divisible by 4 and divisible by 400
+Not a leap year if divisible by 100 if not also by 400 (This is why we first start with 400)
+Start with bigger numbers first because the smallest number might already be divisible so it will "catch it" at a prior if statement
+
 
 ***
 ## Question 7
@@ -139,9 +157,15 @@ let year = 2014
 If you use `random()` it will give you a random number within a specified range. Generate a random number and use it to simulate a coin toss. Print `"heads"` or `"tails"`.
 
 ```swift
-let randomNum = Int.random(in: 0...100)
+let randomNum = Int.random(in: 0...100) 
 
 // your code here
+
+if randomNum % 2 == 0 {
+    print ("heads")
+} else {
+    print ("tails")
+}
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -158,7 +182,7 @@ var c = 3
 var d = 4
 
 // your code here
-```
+
 var smallestOne = a
 
 if b < smallestOne {
@@ -171,5 +195,7 @@ if d < smallestOne {
 smallestOne = d
 }
 print(smallestOne)
+```
+
 
 ***
