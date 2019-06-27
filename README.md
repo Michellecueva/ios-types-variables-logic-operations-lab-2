@@ -73,6 +73,8 @@ if isDivisible == 0 {
 else {
     print("not divisible")
 }
+
+```
 ***
 ## Question 4
 
