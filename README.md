@@ -19,9 +19,22 @@ Print `"above average"` if your grade is greater than the class average or `"bel
 var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
-
-// your code here
 ```
+// your code here
+
+var classSum = grade1 + grade2 + grade3
+var classNum: Double = 3
+var classAverage = classSum/classNum
+var yourGrade = 8.5
+
+if yourGrade > classAverage {
+    print("above average")
+}
+else {
+    print("below average")
+
+}
+
 
 ***
 ## Question 2
@@ -33,6 +46,14 @@ let number = 2
 
 // your code here
 ```
+let isEven = number%2
+
+if isEven == 0 {
+    print("even")
+}
+else {
+    print("odd")
+}
 
 ***
 ## Question 3
@@ -45,7 +66,14 @@ var b = 3
 
 // code here
 ```
+let isDivisible = a % b
 
+if isDivisible == 0 {
+    print("divisible")
+}
+else {
+    print("not divisible")
+}
 ***
 ## Question 4
 
@@ -58,6 +86,13 @@ var c = 2
 
 // your code here
 ```
+if a == b || a == c || b == c {
+    print("At least two variables have the same value")
+}
+else {
+    print("All the values are different")
+}
+
 
 ***
 ## Question 5
@@ -70,6 +105,21 @@ var eggsAge = 12 // eggs are 12 days old
 
 // your code here
 ```
+var baconExpires = 8
+var eggsExpires = 22
+
+if (baconAge < baconExpires) && (eggsAge < eggsExpires) {
+    print("you can cook bacon and eggs")
+}
+else if (baconAge >= baconExpires) && (eggsAge < eggsExpires)  {
+    print("throw out bacon")
+}
+else if (baconAge < baconExpires) && (eggsAge >= eggsExpires)  {
+    print("throw out eggs")
+}
+else {
+    print("throw out eggs and bacon")
+}
 
 ***
 ## Question 6
@@ -109,5 +159,17 @@ var d = 4
 
 // your code here
 ```
+var smallestOne = a
+
+if b < smallestOne {
+smallestOne = b
+}
+if c < smallestOne {
+smallestOne = c
+}
+if d < smallestOne {
+smallestOne = d
+}
+print(smallestOne)
 
 ***
