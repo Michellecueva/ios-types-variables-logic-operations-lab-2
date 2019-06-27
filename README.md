@@ -19,8 +19,7 @@ Print `"above average"` if your grade is greater than the class average or `"bel
 var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
-```
-// your code here
+
 
 var classSum = grade1 + grade2 + grade3
 var classNum: Double = 3
@@ -35,7 +34,7 @@ else {
 
 }
 
-
+```
 ***
 ## Question 2
 
@@ -44,8 +43,9 @@ You are given a number. Print even if the number is even or odd otherwise.
 ```swift
 let number = 2
 
-// your code here
-```
+
+
+
 let isEven = number % 2
 
 if isEven == 0 {
@@ -54,7 +54,7 @@ if isEven == 0 {
 else {
     print("odd")
 }
-
+```
 ***
 ## Question 3
 
@@ -64,8 +64,7 @@ You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible b
 var a = 12
 var b = 3
 
-// code here
-```
+
 let isDivisible = a % b
 
 if isDivisible == 0 {
@@ -84,8 +83,7 @@ var a = 2
 var b = 3
 var c = 2
 
-// your code here
-```
+
 if a == b || a == c || b == c {
     print("At least two variables have the same value")
 }
@@ -93,7 +91,7 @@ else {
     print("All the values are different")
 }
 
-
+```
 ***
 ## Question 5
 
@@ -103,7 +101,7 @@ You are working on a smart-fridge. The smart-fridge knows how old the eggs and b
 var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
-// your code here
+
 
 var baconExpires = 7
 var eggsExpires = 21
